@@ -160,9 +160,23 @@ body {
 
 .hero {
   text-align: center;
-  background-color: #2f303a;
+  background-color: #C4C4C4;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient( 
+   to right,
+   rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)
+   ),
+  url('../image/main/hero-bg.jpg');
+
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -214,6 +228,34 @@ body {
 .features-item {
   flex-basis: calc(100% / 4 - var(--features-item-gap));
   margin-right: var(--features-item-gap);
+}
+
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.antenna::before {
+  background-image: url('../image/main/antenna.svg');
+}
+
+.clock::before {
+  background-image: url('../image/main/clock.svg');
+}
+
+.diagram::before {
+  background-image: url('../image/main/diagram.svg');
+}
+
+.astronaut::before {
+  background-image: url('../image/main/astronaut.svg');
 }
 
 .features-title {
@@ -286,6 +328,15 @@ body {
   letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }
+
+/*     ===============CLIENTS=============    */
+.clients-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 
 /*     ===============FOOTER=============    */
 
