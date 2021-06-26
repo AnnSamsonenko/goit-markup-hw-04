@@ -40,13 +40,21 @@
         </nav>
         <ul class="head-feedback list">
           <li class="phone-mail">
-            <a class="head-link contacts link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="head-link contacts link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./image/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
 
           <li class="phone-mail">
-            <a class="head-link contacts link" href="tel:+380961111111">+38 096 111 11 11 </a>
+            <a class="head-link contacts link" href="tel:+380961111111">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./image/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -67,7 +75,12 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества компании</h2>
           <ul class="features-list list">
-            <li class="features-item antenna">
+            <li class="features-item">
+              <div class="features-thumb">
+                <svg width="70px" height="70px">
+                  <use href="./image/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="features-desc">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
@@ -75,6 +88,11 @@
             </li>
 
             <li class="features-item clock">
+              <div class="features-thumb">
+                <svg width="70px" height="70px">
+                  <use href="./image/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Пунктуальность</h3>
               <p class="features-desc">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
@@ -82,6 +100,11 @@
             </li>
 
             <li class="features-item diagram">
+              <div class="features-thumb">
+                <svg width="70px" height="70px">
+                  <use href="./image/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Планирование</h3>
               <p class="features-desc">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
@@ -89,6 +112,11 @@
             </li>
 
             <li class="features-item astronaut">
+              <div class="features-thumb">
+                <svg width="70px" height="70px">
+                  <use href="./image/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Современные технологии</h3>
               <p class="features-desc">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -184,34 +212,61 @@
           </ul>
         </div>
       </section>
-<!---------------------Клиенты----------------------------->
-<section class="clients section">
-  <div class="container">
-    <h2 class="subtitle">Постоянные клиенты</h2>
-    <ul class="clients-list list">
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-      <li class="clients-item link">
-        <a href=""></a>
-      </li>
-    </ul>
+      <!---------------------Клиенты----------------------------->
+      <section class="clients section">
+        <div class="container">
+          <h2 class="subtitle">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="41px" height="47px">
+                  <use href="./image/sprite.svg#icon-client-1"></use>
+                </svg>
+              </a>
+            </li>
 
-  </div>
-</section>
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="40px" height="52px">
+                  <use href="./image/sprite.svg#icon-client-2"></use>
+                </svg>
+              </a>
+            </li>
 
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="43px" height="41px">
+                  <use href="./image/sprite.svg#icon-client-3"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="84px" height="41px">
+                  <use href="./image/sprite.svg#icon-client-4"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="63px" height="45px">
+                  <use href="./image/sprite.svg#icon-client-5"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="" class="clients-thumb">
+                <svg class="clients-icon" width="94px" height="44px">
+                  <use href="./image/sprite.svg#icon-client-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!---------------------------Футер--------------------->
     <footer class="footer">

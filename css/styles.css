@@ -153,23 +153,26 @@ body {
 }
 
 .contacts {
+  display: inline-flex;
+  align-items: center;
   color: var(--shadow-color);
+  fill: var(--shadow-color);
+}
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*     ====================HERO====================    */
 
 .hero {
   text-align: center;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient( 
-   to right,
-   rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)
-   ),
-  url('../image/main/hero-bg.jpg');
 
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../image/main/hero-bg.jpg');
   background-repeat: no-repeat;
   max-width: 1600px;
   min-height: 600px;
@@ -191,11 +194,10 @@ body {
 }
 
 .hero-button {
-  border-radius: 4px;
-  padding: 10px 32px;
   min-width: 200px;
+  padding: 10px 32px;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-weight: 700;
   font-size: 16px;
@@ -230,32 +232,15 @@ body {
   margin-right: var(--features-item-gap);
 }
 
-.features-item::before {
-  content: '';
-  display: block;
+.features-thumb {
+  display: inline-flex;
+  width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: center;
-  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-}
-
-.antenna::before {
-  background-image: url('../image/main/antenna.svg');
-}
-
-.clock::before {
-  background-image: url('../image/main/clock.svg');
-}
-
-.diagram::before {
-  background-image: url('../image/main/diagram.svg');
-}
-
-.astronaut::before {
-  background-image: url('../image/main/astronaut.svg');
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features-title {
@@ -332,11 +317,37 @@ body {
 /*     ===============CLIENTS=============    */
 .clients-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
+.clients-item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients-thumb {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-thumb:hover,
+.clients-thumb:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+}
 
 /*     ===============FOOTER=============    */
 
