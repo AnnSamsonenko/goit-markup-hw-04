@@ -6,8 +6,15 @@
   --logo-color: #000000;
   --accent-color: #ffffff;
   --shadow-color: #757575;
+  --head-border-color: #ececec;
+  --hero-bg-color: #c4c4c4;
+  --hero-btn-hover: #188ce8;
+  --card-bg-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --footer-bg-color: #2f303a;
+  --galery-border-color: #eeeeee;
   --common-spacing: 0.03em;
-  --features-item-gap: 30px;
+  --card-gap: 30px;
 }
 
 h1,
@@ -104,7 +111,7 @@ body {
 /*     ====================MAIN PAGE================    */
 
 .head {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--head-border-color);
 }
 .headline {
   display: flex;
@@ -185,7 +192,7 @@ body {
 
 .hero {
   text-align: center;
-  background-color: #c4c4c4;
+  background-color: var(--hero-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -230,7 +237,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-btn-hover);
 }
 
 /*     ===================FEATURES and SERVISES====================    */
@@ -242,12 +249,12 @@ body {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--features-item-gap));
+  margin-right: calc(-1 * var(--card-gap));
 }
 
 .features-item {
-  flex-basis: calc(100% / 4 - var(--features-item-gap));
-  margin-right: var(--features-item-gap);
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-right: var(--card-gap);
 }
 
 .features-thumb {
@@ -257,7 +264,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  background-color: var(--card-bg-color);
   border-radius: 4px;
 }
 
@@ -290,20 +297,20 @@ body {
 /*     ===============TEAM=============    */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--card-bg-color);
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--features-item-gap));
-  margin-top: calc(-1 * var(--features-item-gap));
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
 }
 
 .team-card {
-  flex-basis: calc(100% / 4 - var(--features-item-gap));
-  margin-left: var(--features-item-gap);
-  margin-top: var(--features-item-gap);
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
   text-align: center;
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -340,7 +347,7 @@ body {
 }
 
 .team-icon {
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 
 .team-icon:hover,
@@ -353,14 +360,14 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
 }
 
 .clients-item {
-  flex-basis: calc(100% / 6 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc(100% / 6 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
 }
 
 .clients-thumb {
@@ -369,9 +376,9 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 
 .clients-icon {
@@ -389,7 +396,7 @@ body {
 .footer {
   padding: 60px 0;
 
-  background-color: #2f303a;
+  background-color: var(--footer-bg-color);
 }
 
 .footer-thumbs {
@@ -482,7 +489,7 @@ body {
   letter-spacing: var(--common-spacing);
   cursor: pointer;
   color: var(--logo-color);
-  background-color: #f5f4fa;
+  background-color: var(--card-bg-color);
 }
 
 .filter:hover,
@@ -503,18 +510,19 @@ body {
 .galery-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--features-item-gap));
-  margin-top: calc(-1 * var(--features-item-gap));
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
 }
 
 .projects-card {
-  flex-basis: calc(100% / 3 - var(--features-item-gap));
-  margin-left: var(--features-item-gap);
-  margin-top: var(--features-item-gap);
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+  border-right: 1px solid var(--galery-border-color);
+  border-bottom: 1px solid var(--galery-border-color);
+  border-left: 1px solid var(--galery-border-color);
 }
+
 .projects-card:hover,
 .projects-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -546,6 +554,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--common-spacing);
   color: var(--shadow-color);
 }
