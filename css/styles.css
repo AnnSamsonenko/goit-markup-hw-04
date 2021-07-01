@@ -41,6 +41,7 @@ ol {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -522,8 +523,9 @@ body {
   border-left: 1px solid var(--galery-border-color);
 }
 
-.projects-card:hover,
-.projects-card:focus {
+.projects-link:hover,
+.projects-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -533,11 +535,6 @@ body {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-}
-
-.projects-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .projects-title {
